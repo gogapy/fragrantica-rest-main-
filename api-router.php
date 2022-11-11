@@ -13,7 +13,6 @@ $router->addRoute('perfumes/:ID', 'GET', 'PerfumeApiController', 'getPerfume');
 $router->addRoute('perfumes/:ID', 'DELETE', 'PerfumeApiController', 'deletePerfume');
 $router->addRoute('perfumes', 'POST', 'PerfumeApiController', 'insertPerfume');
 $router->addRoute('perfumes/:ID', 'PUT', 'PerfumeApiController', 'updatePerfume');
-$router->addRoute('perfume/:PERFUME', 'get', 'PerfumeApiController', 'findByPerfumeName');
 
 //define router table for brands
 $router->addRoute('brands', 'GET', 'BrandApiController', 'getBrands');
