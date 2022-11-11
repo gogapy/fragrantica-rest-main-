@@ -85,6 +85,4 @@ class PerfumeApiController {
             $this->view->response("The brand doesnt exist", 404);
         }
     }
-    z
-    
 }

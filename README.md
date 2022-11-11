@@ -10,14 +10,14 @@ A simple API REST for CREATE, REED, UPDATE, DELETE (CRUD) perfumes
 - GET one perfume by id: http://localhost/fragrantica-rest-main/api/perfumes/:ID
 - DELETE a perfume by id: http://localhost/fragrantica-rest-main/api/perfumes/:ID
 - POST a perfume: http://localhost/fragrantica-rest-main/api/perfumes
-- PUT a perfume: http://localhost/fragrantica-rest-main/api/perfume/update/:ID
+- PUT a perfume: http://localhost/fragrantica-rest-main/api/perfumes/:ID
 
 ## Brand endpoints
 - GET all the perfumes: http://localhost/fragrantica-rest-main/api/brands
 - GET one perfume by id: http://localhost/fragrantica-rest-main/api/brands/:ID
 - DELETE a perfume by id: http://localhost/fragrantica-rest-main/api/brands/:ID
 - POST a perfume: http://localhost/fragrantica-rest-main/api/brands
-- PUT a perfume: http://localhost/fragrantica-rest-main/api/brand/update/:ID
+- PUT a perfume: http://localhost/fragrantica-rest-main/api/brands/:ID
 
 ## Filter endpoint
-- GET a perfume by brand http://localhost/fragrantica-rest-main/api/brand/:BRAND
+- GET perfumes by brand http://localhost/fragrantica-rest-main/api/brand/:BRAND
