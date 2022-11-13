@@ -7,17 +7,40 @@ A simple API REST for CREATE, REED, UPDATE, DELETE (CRUD) perfumes
 
 ## Perfume endpoints
 - GET all the perfumes: http://localhost/fragrantica-rest-main/api/perfumes
+
 - GET one perfume by id: http://localhost/fragrantica-rest-main/api/perfumes/:ID
+    ## ex: http://localhost/fragrantica-rest-main/api/perfumes/5
+
 - DELETE a perfume by id: http://localhost/fragrantica-rest-main/api/perfumes/:ID
-- POST a perfume: http://localhost/fragrantica-rest-main/api/perfumes
-- PUT a perfume: http://localhost/fragrantica-rest-main/api/perfumes/:ID
+    ## ex: http://localhost/fragrantica-rest-main/api/perfumes/17
+
+- POST a perfume(add a perfume to de data base): http://localhost/fragrantica-rest-main/api/perfumes
+
+- PUT a perfume(modify a perfume): http://localhost/fragrantica-rest-main/api/perfumes/:ID
+    ## ex: http://localhost/fragrantica-rest-main/api/perfumes/24
 
 ## Brand endpoints
-- GET all the perfumes: http://localhost/fragrantica-rest-main/api/brands
-- GET one perfume by id: http://localhost/fragrantica-rest-main/api/brands/:ID
-- DELETE a perfume by id: http://localhost/fragrantica-rest-main/api/brands/:ID
-- POST a perfume: http://localhost/fragrantica-rest-main/api/brands
-- PUT a perfume: http://localhost/fragrantica-rest-main/api/brands/:ID
+- GET all the brands: http://localhost/fragrantica-rest-main/api/brands
+
+- GET one brand by id: http://localhost/fragrantica-rest-main/api/brands/:ID
+    ## ex: http://localhost/fragrantica-rest-main/api/brands/2
+
+- DELETE a brand by id: http://localhost/fragrantica-rest-main/api/brands/:ID
+    ## ex: http://localhost/fragrantica-rest-main/api/brands/5
+
+- POST a brand(add a brand to de data base): http://localhost/fragrantica-rest-main/api/brands
+
+- PUT a brand(modify a brand): http://localhost/fragrantica-rest-main/api/brands/:ID
+    ## ex: http://localhost/fragrantica-rest-main/api/brands/25
 
 ## Filter endpoint
-- GET perfumes by brand http://localhost/fragrantica-rest-main/api/brand/:BRAND
+- GET perfumes filtering by brand_name: http://localhost/fragrantica-rest-main/api/brand/:BRAND
+    ## ex: http://localhost/fragrantica-rest-main/api/brand/Azzaro
+
+## Order endopint
+- GET perfumes sorted by a column: http://localhost/fragrantica-rest-main/api/perfumes/sort/:COLUMN
+    ## ex: http://localhost/fragrantica-rest-main/api/perfumes/sort/brand_name
+
+## filter and sort by column
+- GET a column sorted: http://localhost/fragrantica-rest-main/api/perfumes/filter/:COLUMN
+    ## ex: http://localhost/fragrantica-rest-main/api/perfumes/filter/notes

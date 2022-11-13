@@ -85,4 +85,26 @@ class PerfumeApiController {
             $this->view->response("The brand doesnt exist", 404);
         }
     }
+
+    public function sortByColumn($params = null) {
+        try {
+            $column = $params[':COLUMN'];  
+            $perfumes = $this->model->sort($column);
+            $this->view->response($perfumes);
+        }
+        catch(Exception) {
+            $this->view->response("The column doesnt exist", 404);
+        }
+    }
+
+    public function filterAndSort($params = null) {
+        try {
+            $filter = $params[':COLUMN'];  
+            $perfumes = $this->model->sortfilt($filter, 'perfumes', $filter);
+            $this->view->response($perfumes);
+        }
+        catch(Exception) {
+            $this->view->response("The column doesnt exist", 404);
+        } 
+    }
 }

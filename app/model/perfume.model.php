@@ -61,4 +61,34 @@ class PerfumeModel {
         return $this->db->lastInsertId();
     }
 
+    /**
+     * Sort by column.
+     */
+    function sort($column) {
+        $query = $this->db->prepare("SELECT * FROM perfumes ORDER BY $column");
+        $query->execute();
+
+        $perfumes = $query->fetchAll(PDO::FETCH_OBJ); // return object array.
+        
+        return $perfumes;
+    }
+
+    /**
+     * Filter.
+     */
+    function filter($columns, $table, $column, $name) {
+        $query = $this->db->prepare("SELECT $columns FROM $table WHERE $column = ?"); //ex: SELECT * FROM perfumes WHERE id_perfume = ? 
+        $query->execute([$name]);
+        $object = $query->fetchAll(PDO::FETCH_OBJ);
+
+        return $object; 
+    }
+
+    function sortfilt($columns, $table, $sort) {
+        $query = $this->db->prepare("SELECT $columns FROM $table ORDER BY $sort");
+        $query->execute();
+        $object = $query->fetchAll(PDO::FETCH_OBJ);
+
+        return $object; 
+    }
 }
