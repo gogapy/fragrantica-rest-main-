@@ -25,7 +25,7 @@ $router->addRoute('brands/:ID', 'PUT', 'BrandApiController', 'updateBrand');
 $router->addRoute('brand/:BRAND', 'GET', 'BrandApiController', 'filterByBrand');
 
 //sort by :COLUMN
-$router->addRoute('perfumes/sort/:COLUMN', 'GET', 'PerfumeApiController', 'orderByColumn');
+$router->addRoute('perfumes/sort/:COLUMN', 'GET', 'PerfumeApiController', 'sortByColumn');
 
 //filter by :COLUMN
 $router->addRoute('perfumes/filter/:COLUMN', 'GET', 'PerfumeApiController', 'filterAndSort');
