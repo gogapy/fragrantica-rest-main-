@@ -1,4 +1,4 @@
-# Fragrantica API RESTful
+# Fragantica API RESTful
 An API REST for CREATE, REED, UPDATE, DELETE (CRUD) perfumes
 
 ## Importar la base de datos
@@ -6,41 +6,41 @@ An API REST for CREATE, REED, UPDATE, DELETE (CRUD) perfumes
 
 
 ## Perfume endpoints
-- GET all the perfumes: http://localhost/fragrantica-rest-main/api/perfumes
+- GET all the perfumes: http://localhost/fragantica-rest-main/api/perfumes
 
-- GET one perfume by id: http://localhost/fragrantica-rest-main/api/perfumes/:ID
-    - ex: http://localhost/fragrantica-rest-main/api/perfumes/5
+- GET one perfume by id: http://localhost/fragantica-rest-main/api/perfumes/:ID
+    - ex: http://localhost/fragantica-rest-main/api/perfumes/5
 
-- DELETE a perfume by id: http://localhost/fragrantica-rest-main/api/perfumes/:ID
-    - ex: http://localhost/fragrantica-rest-main/api/perfumes/17
+- DELETE a perfume by id: http://localhost/fragantica-rest-main/api/perfumes/:ID
+    - ex: http://localhost/fragantica-rest-main/api/perfumes/17
 
-- POST a perfume(add a perfume to de data base): http://localhost/fragrantica-rest-main/api/perfumes
+- POST a perfume(add a perfume to de data base): http://localhost/fragantica-rest-main/api/perfumes
 
-- PUT a perfume(modify a perfume): http://localhost/fragrantica-rest-main/api/perfumes/:ID
-    - ex: http://localhost/fragrantica-rest-main/api/perfumes/24
+- PUT a perfume(modify a perfume): http://localhost/fragantica-rest-main/api/perfumes/:ID
+    - ex: http://localhost/fragantica-rest-main/api/perfumes/24
 
 ## Brand endpoints
-- GET all the brands: http://localhost/fragrantica-rest-main/api/brands
+- GET all the brands: http://localhost/fragantica-rest-main/api/brands
 
-- GET one brand by id: http://localhost/fragrantica-rest-main/api/brands/:ID
-    - ex: http://localhost/fragrantica-rest-main/api/brands/2
+- GET one brand by id: http://localhost/fragantica-rest-main/api/brands/:ID
+    - ex: http://localhost/fragantica-rest-main/api/brands/2
 
-- DELETE a brand by id: http://localhost/fragrantica-rest-main/api/brands/:ID
-    - ex: http://localhost/fragrantica-rest-main/api/brands/5
+- DELETE a brand by id: http://localhost/fragantica-rest-main/api/brands/:ID
+    - ex: http://localhost/fragantica-rest-main/api/brands/5
 
-- POST a brand(add a brand to de data base): http://localhost/fragrantica-rest-main/api/brands
+- POST a brand(add a brand to de data base): http://localhost/fragantica-rest-main/api/brands
 
-- PUT a brand(modify a brand): http://localhost/fragrantica-rest-main/api/brands/:ID
-    - ex: http://localhost/fragrantica-rest-main/api/brands/25
+- PUT a brand(modify a brand): http://localhost/fragantica-rest-main/api/brands/:ID
+    - ex: http://localhost/fragantica-rest-main/api/brands/25
 
 ## Filter endpoint
-- GET perfumes filtering by brand_name: http://localhost/fragrantica-rest-main/api/brand/:BRAND
-    - ex: http://localhost/fragrantica-rest-main/api/brand/Azzaro
+- GET perfumes filtering by brand_name: http://localhost/fragantica-rest-main/api/brand/:BRAND
+    - ex: http://localhost/fragantica-rest-main/api/brand/Azzaro
 
 ## Order endopint
-- GET perfumes sorted by a column: http://localhost/fragrantica-rest-main/api/perfumes/sort/:COLUMN
-    - ex: http://localhost/fragrantica-rest-main/api/perfumes/sort/brand_name
+- GET perfumes sorted by a column: http://localhost/fragantica-rest-main/api/perfumes/sort/:COLUMN
+    - ex: http://localhost/fragantica-rest-main/api/perfumes/sort/brand_name
 
 ## filter and sort by column
-- GET a column sorted: http://localhost/fragrantica-rest-main/api/perfumes/filter/:COLUMN
-    - ex: http://localhost/fragrantica-rest-main/api/perfumes/filter/notes
+- GET a column sorted: http://localhost/fragantica-rest-main/api/perfumes/filter/:COLUMN
+    - ex: http://localhost/fragantica-rest-main/api/perfumes/filter/notes
