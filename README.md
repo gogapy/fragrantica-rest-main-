@@ -1,5 +1,5 @@
 # Fragrantica API RESTful
-A simple API REST for CREATE, REED, UPDATE, DELETE (CRUD) perfumes
+An API REST for CREATE, REED, UPDATE, DELETE (CRUD) perfumes
 
 ## Importar la base de datos
 - from PHPMyAdmin import database/perfume_shop.php
